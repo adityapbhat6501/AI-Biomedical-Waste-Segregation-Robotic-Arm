@@ -1,0 +1,34 @@
+# YOLO Dataset Configuration — Biomedical Waste Segregation
+
+# Absolute path to the dataset root directory.
+# Update this to the absolute path on your system if training on another machine.
+path: ./dataset
+
+# Relative paths to train / val / test image directories
+train: images/train
+val:   images/val
+# test: images/test   # Uncomment when a test split is available
+
+# Number of classes
+nc: 17
+
+# Class names — must match the WASTE_CLASS_MAP keys in inference/classes.py
+# Class index corresponds to the integer in YOLO label .txt files
+names:
+  0:  used_glove
+  1:  blood_soaked_bandage
+  2:  culture_dish
+  3:  contaminated_swab
+  4:  chemical_container
+  5:  pathological_sample
+  6:  expired_medicine
+  7:  syringe
+  8:  needle
+  9:  scalpel
+  10: broken_glass
+  11: ampoule
+  12: plastic_wrapper
+  13: sterile_packaging
+  14: iv_bag_empty
+  15: paper_waste
+  16: food_wrapper
